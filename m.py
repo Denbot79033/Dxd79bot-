@@ -14,7 +14,7 @@ from threading import Thread
 loop = asyncio.get_event_loop()
 TOKEN = '8339218065:AAHy_bGlj9pcdMXGN9Nba_O_XuaAsmwj9Iw'
 MONGO_URI = 'mongodb+srv://ihatemosquitos9:JvOK4gNs0SH5SVw9@cluster0.1pd5kt5.mongodb.net/?appName=Cluster0'
-CHANNEL_ID = -1200225155
+CHANNEL_ID = -1001200225155
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
@@ -214,7 +214,7 @@ def handle_message(message):
     elif message.text == "Attack 🚀":
         attack_command(message)
     elif message.text == "Rules 🔰":
-        bot.send_message(message.chat.id, "*🔆 𝐕𝐈𝐏 𝐃𝐃𝐎𝐒 𝐑𝐔??𝐄𝐒 🔆\n\n1. Do ddos in 3 match after play 2 match normal or play 2 tdm match\n2. Do less then 80kills to avoid ban\n3. Dont Run Too Many Attacks !! Cause A Ban From Bot\n4. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot\n5. After 1 or 2 match clear cache of your game \n\n🟢 FOLLOW THIS RULES TO AVOID 1 MONTH BAN 🟢*", parse_mode='Markdown')
+        bot.send_message(message.chat.id, "*🔆 𝐕𝐈𝐏 𝐃??𝐎𝐒 𝐑𝐔??𝐄𝐒 🔆\n\n1. Do ddos in 3 match after play 2 match normal or play 2 tdm match\n2. Do less then 80kills to avoid ban\n3. Dont Run Too Many Attacks !! Cause A Ban From Bot\n4. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot\n5. After 1 or 2 match clear cache of your game \n\n🟢 FOLLOW THIS RULES TO AVOID 1 MONTH BAN 🟢*", parse_mode='Markdown')
     elif message.text == "My Info ℹ️":
         user_id = message.from_user.id
         user_data = users_collection.find_one({"user_id": user_id})
